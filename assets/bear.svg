@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 106" fill="none">
+  <defs>
+    <linearGradient id="fur" x1="20" y1="12" x2="78" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9D6542"/><stop offset="1" stop-color="#603B2B"/>
+    </linearGradient>
+    <linearGradient id="muzzle" x1="36" y1="58" x2="62" y2="79" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3D9B5"/><stop offset="1" stop-color="#D8B58E"/>
+    </linearGradient>
+  </defs>
+  <path d="M19 31c-1-11 6-20 16-20 8 0 14 5 16 12 2-7 8-12 16-12 10 0 17 9 16 20 8 8 12 19 12 32 0 24-18 39-44 39S7 87 7 63c0-13 4-24 12-32Z" fill="#F4EDE0" stroke="#543A2A" stroke-width="5"/>
+  <path d="M23 34c-1-8 4-14 11-14 7 0 12 5 12 13-4 3-8 7-10 12-6-1-11-5-13-11ZM53 33c0-8 5-13 12-13s12 6 11 14c-2 6-7 10-13 11-2-5-6-9-10-12Z" fill="url(#fur)" stroke="#543A2A" stroke-width="4"/>
+  <path d="M20 42c6-8 16-12 30-12s24 4 30 12c6 7 9 15 9 24 0 20-15 32-39 32S11 86 11 66c0-9 3-17 9-24Z" fill="url(#fur)" stroke="#543A2A" stroke-width="4"/>
+  <path d="M26 58c0-5 3-8 7-8s7 3 7 8-3 8-7 8-7-3-7-8ZM60 58c0-5 3-8 7-8s7 3 7 8-3 8-7 8-7-3-7-8Z" fill="#F7F0E5"/>
+  <circle cx="33" cy="58" r="3.4" fill="#37271F"/><circle cx="67" cy="58" r="3.4" fill="#37271F"/>
+  <path d="M35 72c3-8 8-12 15-12s12 4 15 12c-2 8-8 12-15 12s-13-4-15-12Z" fill="url(#muzzle)" stroke="#543A2A" stroke-width="3"/>
+  <path d="M46 70c0-2 2-4 4-4s4 2 4 4c0 2-2 3-4 3s-4-1-4-3Z" fill="#513126"/>
+  <path d="M50 73v5m0 0c-3 4-7 4-10 1m10-1c3 4 7 4 10 1" stroke="#543A2A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d99263" />
+    <meta name="description" content="Descubre los mixes enchilados de Gomi Locas." />
+    <title>Gomi Locas — Gomitas con actitud</title>
+    <link rel="icon" href="assets/bear.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page" id="inicio">
+      <section class="showcase" id="productos" data-slide="2" aria-label="Colección de gomitas Gomi Locas">
+        <div class="scenes" aria-hidden="true">
+          <img class="scene" src="assets/scene-tropical.jpg" alt="" />
+          <img class="scene" src="assets/scene-berry.jpg" alt="" />
+          <img class="scene is-active" src="assets/scene-honey.jpg" alt="" fetchpriority="high" />
+          <img class="scene" src="assets/scene-blue.jpg" alt="" />
+        </div>
+        <div class="scene-depth" aria-hidden="true">
+          <img class="scene-depth-image" src="assets/scene-tropical.jpg" alt="" />
+          <img class="scene-depth-image" src="assets/scene-berry.jpg" alt="" />
+          <img class="scene-depth-image is-active" src="assets/scene-honey.jpg" alt="" />
+          <img class="scene-depth-image" src="assets/scene-blue.jpg" alt="" />
+        </div>
+        <div class="scene-shade" aria-hidden="true"></div>
+        <div class="transition-glow" aria-hidden="true"></div>
+        <div class="slide-decor" aria-hidden="true">
+          <div class="decor-set decor-set--tropical" data-decor-slide="0">
+            <img class="decor-item decor-item--upper-left" src="assets/garnish/lime-wedge.png" alt="" />
+            <img class="decor-item decor-item--upper-right" src="assets/garnish/cilantro-sprig.png" alt="" />
+            <img class="decor-item decor-item--lower-left" src="assets/garnish/cherries-low.png" alt="" />
+            <img class="decor-item decor-item--lower-right" src="assets/garnish/gummy-worm.png" alt="" />
+          </div>
+          <div class="decor-set decor-set--berry" data-decor-slide="1">
+            <img class="decor-item decor-item--upper-left" src="assets/garnish/chili-pair.png" alt="" />
+            <img class="decor-item decor-item--upper-right" src="assets/garnish/cherries.png" alt="" />
+            <img class="decor-item decor-item--lower-left" src="assets/garnish/gummy-worm.png" alt="" />
+            <img class="decor-item decor-item--lower-right" src="assets/garnish/donut-pair.png" alt="" />
+          </div>
+          <div class="decor-set decor-set--honey is-active" data-decor-slide="2">
+            <img class="decor-item decor-item--upper-left" src="assets/garnish/cilantro-leaves.png" alt="" />
+            <img class="decor-item decor-item--upper-right" src="assets/garnish/chili-pair.png" alt="" />
+            <img class="decor-item decor-item--lower-left" src="assets/garnish/lime-round.png" alt="" />
+            <img class="decor-item decor-item--lower-right" src="assets/garnish/gummy-bear.png" alt="" />
+          </div>
+          <div class="decor-set decor-set--blue" data-decor-slide="3">
+            <img class="decor-item decor-item--upper-left" src="assets/garnish/lime-round.png" alt="" />
+            <img class="decor-item decor-item--upper-right" src="assets/garnish/cilantro-low.png" alt="" />
+            <img class="decor-item decor-item--lower-left" src="assets/garnish/cherries.png" alt="" />
+            <img class="decor-item decor-item--lower-right" src="assets/garnish/donut-pair.png" alt="" />
+          </div>
+        </div>
+
+        <header class="site-header">
+          <a class="brand" href="#inicio" aria-label="Gomi Locas, inicio">
+            <img src="assets/gomi-locas-logo.png" alt="Gomi Locas" />
+          </a>
+
+          <nav class="nav nav-main" aria-label="Navegación principal">
+            <a class="active" href="#inicio">Home</a>
+            <a href="https://wa.me/50586553628?text=Hola%2C%20Gomi%20Locas.%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20gomitas.%20%C2%BFQu%C3%A9%20sabores%20y%20tama%C3%B1os%20tienen%20disponibles%3F" target="_blank" rel="noopener noreferrer">Contacto</a>
+            <button class="icon-button search-icon" type="button" aria-label="Buscar productos">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.1 4.1"/></svg>
+            </button>
+            <button class="icon-button bag-icon" id="open-cart" type="button" aria-label="Carrito, 0 artículos">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l1.2 11h-15l.8-11Z"/><path d="M9 9V6.8a3 3 0 0 1 6 0V9"/></svg>
+              <i id="cart-count" aria-live="polite">0</i>
+            </button>
+          </nav>
+        </header>
+
+        <div class="hero-title" id="hero-title" aria-hidden="true">
+          <span class="title-word title-word--left">GOMI</span>
+          <span class="title-word title-word--right">LOCAS</span>
+        </div>
+
+        <button class="slide-arrow slide-arrow--previous" id="previous-product" type="button" aria-label="Mezcla anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7" /></svg>
+        </button>
+        <button class="slide-arrow slide-arrow--next" id="next-product" type="button" aria-label="Mezcla siguiente">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7" /></svg>
+        </button>
+
+        <div class="product-info" aria-live="polite" aria-atomic="true">
+          <p class="eyebrow" id="product-kicker">Ositos con limón y chile</p>
+          <h1 id="product-title">Ositos Enchilados</h1>
+        </div>
+
+        <div class="purchase-area">
+          <div class="price-stack">
+            <span class="selected-size" id="selected-size">Vaso mediano</span>
+            <p class="price" id="product-price">$65</p>
+          </div>
+          <button class="add-button" id="buy-button" type="button">
+            Comprar ahora <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div class="slide-controls" role="group" aria-label="Elegir mezcla">
+          <button class="slide-dot" type="button" aria-label="Mix tropical" aria-pressed="false"></button>
+          <button class="slide-dot" type="button" aria-label="Corazones locos" aria-pressed="false"></button>
+          <button class="slide-dot is-active" type="button" aria-label="Ositos enchilados" aria-pressed="true"></button>
+          <button class="slide-dot" type="button" aria-label="Aros sour" aria-pressed="false"></button>
+          <span class="slide-count"><span id="slide-current">03</span> <i>/</i> 04</span>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="contacto">
+        <span>GOMI LOCAS</span>
+        <span>Una mezcla con personalidad</span>
+        <span>© 2026</span>
+      </footer>
+    </main>
+
+    <dialog class="size-dialog" id="size-dialog" aria-labelledby="size-title">
+      <div class="size-dialog__panel">
+        <button class="dialog-close" id="close-size-dialog" type="button" aria-label="Cerrar selector">×</button>
+        <p class="dialog-eyebrow" id="dialog-eyebrow">Tu mezcla, a tu medida</p>
+        <div class="checkout-progress" id="checkout-progress" aria-label="Paso 1 de 2">
+          <span class="checkout-progress__bar is-active" data-progress-step="1"></span>
+          <span class="checkout-progress__bar" data-progress-step="2"></span>
+          <span class="checkout-progress__label" id="checkout-progress-label">Paso 1 de 2</span>
+        </div>
+
+        <section class="checkout-step" id="size-step" aria-labelledby="size-title">
+          <h2 id="size-title" tabindex="-1">Elige el tamaño del vaso</h2>
+          <p class="dialog-copy">Primero escoge el tamaño para tu mezcla.</p>
+          <button class="cart-reminder" id="cart-reminder" type="button" hidden>
+            <span id="cart-reminder-text"></span>
+            <strong>Ver carrito <span aria-hidden="true">↗</span></strong>
+          </button>
+
+          <fieldset class="size-options">
+            <legend class="visually-hidden">Tamaño del vaso</legend>
+            <label class="size-option">
+              <input type="radio" name="cup-size" value="35" data-size-name="Chico" />
+              <span class="size-card">
+                <span class="cup-preview cup-preview--small" aria-hidden="true"><img src="assets/bear.svg" alt="" /></span>
+                <span class="size-name">Chico</span>
+                <span class="size-price">$35</span>
+              </span>
+            </label>
+            <label class="size-option">
+              <input type="radio" name="cup-size" value="65" data-size-name="Mediano" checked />
+              <span class="size-card">
+                <span class="cup-preview cup-preview--medium" aria-hidden="true"><img src="assets/bear.svg" alt="" /></span>
+                <span class="size-name">Mediano</span>
+                <span class="size-price">$65</span>
+              </span>
+            </label>
+            <label class="size-option">
+              <input type="radio" name="cup-size" value="90" data-size-name="Grande" />
+              <span class="size-card">
+                <span class="cup-preview cup-preview--large" aria-hidden="true"><img src="assets/bear.svg" alt="" /></span>
+                <span class="size-name">Grande</span>
+                <span class="size-price">$90</span>
+              </span>
+            </label>
+          </fieldset>
+
+          <button class="checkout-next" id="continue-to-sauces" type="button">
+            Continuar <span aria-hidden="true">→</span>
+          </button>
+        </section>
+
+        <section class="checkout-step" id="sauce-step" aria-labelledby="sauce-title" hidden>
+          <h2 id="sauce-title" tabindex="-1">Elige tus salsas</h2>
+          <p class="dialog-copy">Puedes escoger varias. Si no quieres, déjalo sin seleccionar.</p>
+          <p class="order-summary" id="order-summary"></p>
+
+          <fieldset class="sauce-options">
+            <legend class="visually-hidden">Salsas para las gomitas</legend>
+            <label class="sauce-option"><input type="checkbox" name="sauce" value="Tajín"><span class="sauce-check" aria-hidden="true">✓</span><span>Tajín</span><span class="sauce-flavor" aria-hidden="true">🌶️</span></label>
+            <label class="sauce-option"><input type="checkbox" name="sauce" value="Chamoy"><span class="sauce-check" aria-hidden="true">✓</span><span>Chamoy</span><span class="sauce-flavor" aria-hidden="true">🍓</span></label>
+            <label class="sauce-option"><input type="checkbox" name="sauce" value="Miguelito"><span class="sauce-check" aria-hidden="true">✓</span><span>Miguelito</span><span class="sauce-flavor" aria-hidden="true">✨</span></label>
+          </fieldset>
+
+          <label class="extra-sauce" for="extra-sauce">
+            <span>¿Otra salsa o extra?</span>
+            <input id="extra-sauce" type="text" maxlength="80" placeholder="Escríbelo aquí (opcional)" autocomplete="off" />
+          </label>
+
+          <div class="checkout-actions">
+            <button class="checkout-back" id="back-to-size" type="button"><span aria-hidden="true">←</span> Tamaño</button>
+            <button class="whatsapp-order checkout-add-to-cart" id="add-to-cart" type="button">
+              Agregar al carrito <span aria-hidden="true">＋</span>
+            </button>
+          </div>
+          <p class="dialog-note">Después puedes agregar más vasos y enviar todo junto.</p>
+        </section>
+
+        <section class="checkout-step cart-step" id="cart-step" aria-labelledby="cart-title" hidden>
+          <h2 id="cart-title" tabindex="-1">Tu carrito</h2>
+          <p class="dialog-copy">Revisa tus vasos y cambia las cantidades antes de pedir.</p>
+          <p class="cart-empty" id="cart-empty">Todavía no agregas productos. Vuelve a la colección para elegir uno.</p>
+          <div class="cart-items" id="cart-items" aria-live="polite"></div>
+          <div class="cart-total" id="cart-total" hidden><span>Total</span><strong id="cart-total-value"></strong></div>
+          <div class="cart-actions">
+            <button class="checkout-back" id="continue-shopping" type="button"><span aria-hidden="true">←</span> Seguir agregando</button>
+            <a class="whatsapp-order" id="send-cart-whatsapp" href="https://wa.me/50586553628" target="_blank" rel="noopener noreferrer" hidden>
+              Enviar pedido <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="dialog-note">Tu pedido completo se enviará a Gomi Locas por WhatsApp.</p>
+        </section>
+      </div>
+    </dialog>
+  </body>
+</html>
