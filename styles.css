@@ -288,6 +288,14 @@ button { color: inherit; font: inherit; }
   .showcase[data-slide="2"] .title-word--left { top: 25%; left: 11.5%; font-size: clamp(82px, 9.6vw, 184px); }
   .showcase[data-slide="2"] .title-word--right { top: 55%; right: 8.5%; font-size: clamp(74px, 8.6vw, 165px); }
 }
+@media (min-width: 821px) and (max-aspect-ratio: 4/3) {
+  .showcase[data-slide="1"] .title-word--left,
+  .showcase[data-slide="3"] .title-word--left {
+    top: 15%;
+    left: 9%;
+    font-size: clamp(70px, 8vw, 110px);
+  }
+}
 .hero-title.is-changing .title-word--left { animation: title-left-in .65s cubic-bezier(.2, .75, .25, 1) both; }
 .hero-title.is-changing .title-word--right { animation: title-right-in .72s cubic-bezier(.2, .75, .25, 1) .08s both; }
 
